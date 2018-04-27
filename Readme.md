@@ -13,4 +13,4 @@ Running the container
 ----------------------
 
     docker pull invokr/mpd
-    docker run -name mpd -d -p 8000:8000 -p 6600:6600 -v mpd:/mpd -e MPD_DEFAULT_PERM="" -e MPD_ADMIN_PASS="pw" -e MPD_STREAM_PORT=8000 invokr/mpd
+    docker run --name mpd -d -p 8000:8000 -p 6600:6600 -v mpd:/mpd -e MPD_DEFAULT_PERM="" -e MPD_ADMIN_PASS="pw" -e MPD_STREAM_PORT=8000 invokr/mpd
